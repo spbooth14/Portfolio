@@ -1,0 +1,21 @@
+<!-- #I211 Group Homework 3
+#Skyler Payne Boooth
+#Spbooth
+#Group 54 -->
+
+<html>
+<head><title>Group Homework 3</title></head>
+<body>
+
+<form action="Spbooth_A3_Group.cgi" method="post">
+	<h1>Enter a new address</h1> <br /> <br />
+	<h2>Name: </h2><input type="text" name="name" maxlength=100 size=50 required><br /><br />
+    <h2>Address Line 1: </h2><input type="text" name="address1" maxlength=100 size=50 required><br /><br />
+	<h2>Address Line 2: </h2><input type="text" name="address2" maxlength=100 size=50><br /><br />
+	<h2>State (2 Letter Code): </h2><input type="text" name="state" maxlength=2 size=50 required><br /><br />
+	<h2>ZIP: </h2><input type="text" name="zip" maxlength=100 size=50 required><br /><br />
+	<br /><input type="submit" value="Submit Address" />
+</form>
+
+</body>
+</html>
