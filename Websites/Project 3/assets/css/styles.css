@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+/* 
+	I399 Web Development
+		Project 3
+		Skyler Booth
+		Styles
+*/
+
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body { 
+background: url(../images/WORLD-WAR-TWO.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+
+.container {
+	width: 700px;
+	margin: 150px auto 1000px;
+	border: 6px double grey;
+	padding: 2.0em 3.0em 2.0em 4.0em;
+	background-color: rgba(255,255,255,.7);
+}
+
+h1 {
+	position: relative;
+	font-family: 'Oswald', sans-serif;
+}
+
+h1::before {
+content: "\201C";
+position: absolute;  /* one positioning method */
+top: -15px;
+left: -35px;
+font-family: 'Times New Roman', serif;
+font-size: 2.0em;
+
+}
+
+h1::after {
+content: "\201D";
+margin-right: 0px; /* another positioning method */
+font-family: 'Times New Roman', serif;
+}
+
+.duty {
+	color:Green;
+	font-weight: bold;
+}
+
+.battle {
+	color:red;
+	font-weight: bold;
+}

@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Graduate|Roboto:400,500,700');
+
+/* 
+	I399 Web Development
+	Project 4
+	Skyler Booth
+	Styles
+*/
+
+
+/* apply a natural box layout model to all elements */
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* GENERAL */
+
+main, header {
+	max-width: 960px;
+	margin: 1.8em auto 3.0em;
+}
+body {
+	background: url(../images/grey_wash_wall.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+main {
+	background: url(../images/purty_wood.png) repeat center center;
+	/* flex container */
+	display: flex;
+	flex-flow: wrap;
+	padding: 0 3%;
+}
+article, aside {
+	flex: 0 1 50%;
+	padding: 0;
+}
+article {
+	padding-right: 2%;
+}
+aside {
+	padding-left: 2%;
+}
+
+/* TYPOGRAPHY */
+
+p, h1, h2, h3, h4, h5, h6, li, td, figcaption, address {
+	font-family: 'Roboto', serif;
+}
+header h1 {
+	font-size: 125px;
+	font-family: 'Graduate', cursive;
+	font-weight: bold;
+	line-height: 0em;
+	color: white;
+}
+header h3 {
+	font-size: 30px;
+	line-height: 0;
+	color: white;
+}
+main a:link, main a:visited, footer a:link, footer a:visited {
+	color: red;
+	text-decoration: none;
+}
+main a:active, main a:hover, footer a:active, footer a:hover {
+	color: green;
+}
+
+/* NAVIGATION - See menu.css */
+
+
+/* HEADER */
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 4.0em;
+	margin-bottom: 0;
+}
+.KOK {
+	width: 214px;
+	height: 214px;
+}
+.kilroys {
+	line-height: 1.0em;
+}
+.wedSpecials {
+	background: red;
+	color: white;
+	padding: 0 2% 0 2%;
+	text-transform: uppercase;
+	text-align: center;
+	max-width: 316px;
+}
+@media screen and (max-width:48em) {
+	.KOK {
+		max-width: 100%;
+		height: auto;
+	}
+	.kilroys {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		border: 0;
+	}
+	.wedSpecials {
+		width: 100%;
+		margin-top: 1.0em;
+	}
+	.facebook {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		border: 0;
+	}
+	main {
+		margin-top: 0;
+	}
+}
+
+/* MAIN */
+
+.logo {
+	margin: 0 auto;
+}
+article h2, aside h2 {
+	font-family: 'Graduate', cursive;
+	color: red;
+	-webkit-text-fill-color: red;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	font-size: 60px;
+	padding: 5px 0 .5px 0;
+	margin: 0;
+	text-align: center;
+}
+article h3, aside h3 {
+	font-weight: normal;
+	font-size: 26px;
+	margin: 0;
+	padding: 0;
+}
+article p, aside p {
+	padding: 5px 0 10px 0;
+	margin: 0;
+}
+
+/* CONTACT */
+
+#contact article, #contact aside {
+	flex: 0 1 50%;
+	padding: 3%;
+}
+#contact article {
+	flex-basis: 65%;
+}
+#contact aside {
+	flex-basis: 35%;
+	padding: 0;
+	margin: 0;
+}
+.facebook {
+	padding: 0;
+	margin: 0;
+}
+#contact h3 {
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+}
+#contact h1 {
+	text-align: center;
+}
+#contact p {
+	padding: 10px;
+}
+#contact textarea {
+	width: 100%;
+	height: 100px;
+}
+.ghost-button {
+	display: inline-block;
+	width: 100px;
+	padding: 8px;
+	color: red;
+	background-color: transparent;
+	border: 2px solid red;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	transition: color 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
+}
+.ghost-button:hover, .ghost-button:active {
+	background-color: red;
+	border-color: red;
+	color: #fff;
+	transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
+}
+
+/* FOOTER */
+
+footer {
+	padding: 0 0 4.0em 0;
+	background-color: grey;
+}
+#sitemap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 960px;
+	margin: 0 auto;
+}
+section {
+	flex: 0 1 auto;
+	padding: 0;
+}
+footer h1, footer address, footer p, footer h2 {
+	color: white;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+footer h1 {
+	text-align: center;
+}
+footer i {
+	margin: 2%;
+	padding: 0;
+}
+footer a {
+	margin: 0;
+	padding-bottom: 2%;
+}

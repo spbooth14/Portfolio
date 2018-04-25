@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	<title>Project 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Plugins -->
+	<link rel="stylesheet" href="assets/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="assets/css/blueimp-indicator.css">
+	<link rel="stylesheet" href="assets/css/hover-min.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	
+	<link href="assets/css/styles.css" media="all" rel="stylesheet" type="text/css">
+	
+  </head>
+  <body>
+  <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+		<div class="slides"></div>
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+	</div>
+	
+	<nav class="navbar navbar-toggleable-md sticky-top navbar-inverse bg-inverse">
+	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">Purrfect Pet Sitters</a>
+	  <div class="collapse navbar-collapse" id="navbarText">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Photos</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Testimonials</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">FAQs</a>
+		  </li>
+		</ul>
+		<span class="navbar-text">
+		  812-555-1212
+		</span>
+	  </div>
+	</nav>
+	<header class="pt-2">
+		<div class="container" id="kitten">
+			<h1>Purrfect Pet Sitters</h1>
+			<h3>Taking care of your pets while you’re away</h3>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Schedule an Appointment</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Schedule an Appointment</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+					  First name:<br>
+					  <input type="text" name="firstname"><br>
+					  Last name:<br>
+					  <input type="text" name="lastname"><br>
+					  Date:<br>
+					  <input type="date" name="day"><br>
+					  Time:<br>
+					  <input type="time" name="time"><br>
+					  Animal/Breed:<br>
+					  <input type="text" name="breed"><br>
+					  Reason:<br>
+					  <textarea rows="1" cols="50">Shots, check-up, etc...</textarea>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Schedule Appointment</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="row" id="links">
+					<div class="col-4 p-3">
+						<h1>How do I get started?</h1>
+						<p>To set up a free in-home visit, call us at 812-555-1212
+						or email at purrfect-petsitters@gmail.com. We’ll come
+						meet you and your pets, take notes on their
+						preferences, and discuss a visit plan.</p>
+						<a href="assets/images/635920157543466349-1538254703_small dog.jpg" title="Image 1">
+							<figure>
+								<img class="img-fluid" src="assets/images/635920157543466349-1538254703_small dog.jpg">
+							</figure>
+						</a>
+					</div>
+					<div class="col-4 p-3">
+						<h1>How do I schedule visits?</h1>
+						<p>Once you’ve completed an in-home visit, to schedule
+						pet sitting, just call 812-555-1212.</p>
+						<a href="assets/images/catdog.jpe" title="Image 2">
+							<figure>
+								<img class="img-fluid" src="assets/images/catdog.jpe">
+							</figure>
+						</a>
+					</div>
+					<div class="col-4 p-3">
+						<h1>What are the rates?</h1>
+						<p>$18 per visit.</p>
+						<a href="assets/images/_nIu8KHX.jpeg" title="Image 3">
+							<figure>
+								<img class="img-fluid" src="assets/images/_nIu8KHX.jpeg">
+							</figure>
+						</a>
+					</div>
+	</div>
+	<footer class=pb-5>
+		<div class="container">
+			<p>Purrfect Pet Sitters<br>
+			611 N Woodlawn Ave<br>
+			Bloomington, IN 47408</p>
+			<p>812-555-1212</p>
+			<p>purrfect-petsitters@gmail.com</p>
+			<a href="https://www.facebook.com/purrfect.petsitters">https://www.facebook.com/purrfect.petsitters</a>
+			
+	</footer>
+	 <!-- Backstretch only works with this version -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<!-- BACKSTRETCH -->
+	<script src="assets/js/jquery.backstretch.min.js"></script>
+	<script> 
+		$('#exampleModal').on('show.bs.modal', function (event) {
+		  var button = $(event.relatedTarget) // Button that triggered the modal
+		  var recipient = button.data('whatever') // Extract info from data-* attributes
+		  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+		  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+		  var modal = $(this)
+		  modal.find('.modal-title').text('New message to ' + recipient)
+		  modal.find('.modal-body input').val(recipient)
+		})
+	</script>
+
+	<!-- GALLERY -->
+	<script src="assets/js/blueimp-gallery.min.js"></script>
+	<script src="assets/js/blueimp-gallery-indicator.js"></script>
+	<script src="assets/js/blueimp-gallery-fullscreen.js"></script>
+	<script>
+		document.getElementById('links').onclick = function (event) {
+			event = event || window.event;
+			var target = event.target || event.srcElement,
+				link = target.src ? target.parentNode : target,
+				options = {index: link, event: event},
+				links = this.getElementsByTagName('a');
+			blueimp.Gallery(links, options);
+		};
+	</script>
+  </body>
+</html>

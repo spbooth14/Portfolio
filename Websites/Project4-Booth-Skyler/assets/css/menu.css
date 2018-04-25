@@ -1,0 +1,170 @@
+/* Modified from http://codepen.io/joe-watkins/pen/Emzxf */
+
+/* needed for checkbox hack */
+@-webkit-keyframes bugfix {
+	from {
+		padding: 0;
+	}
+	to {
+		padding: 0;
+	}
+}
+
+/* general */
+
+nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background: #262018;
+}
+
+.menu {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* narrow screens */
+
+nav ul {
+	display: none;
+	list-style: none;
+	padding: 0;
+}
+
+nav ul li a {
+	display: block;
+	padding: 1.0em;
+	background: #262018;
+	color: white;
+	text-decoration: none;
+	flex-shrink: 1;
+	border-right: 1px solid #444;
+}
+
+nav ul li a:hover {
+	background: red;
+	transition: background .2s ease-in-out;
+}
+
+#nav ul li:first-of-type a {
+	border-left: 1px solid #444;
+}
+
+nav ul li ul li a {
+	padding-left: 2.0em;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+nav ul li ul li ul li a {
+	padding-left: 4.0em;
+}
+
+nav input.trigger {
+	/*position: absolute;
+	top: -9999px;
+	left: -9999px;*/
+	display: none;
+}
+
+nav input.trigger:checked ~ ul, nav input.trigger:checked ~ ul li ul {
+	display: block !important;
+}
+@media (min-width: 48em) {
+	nav input.trigger:checked ~ ul, nav input.trigger:checked ~ ul li ul {
+		/* older flexbox */
+		/*display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		-webkit-box-orient: horizontal;
+		-moz-box-orient: horizontal;
+		box-orient: horizontal;*/
+		/* newer flexbox */
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+nav label {
+	position: relative;
+	display: block;
+	min-height: 2em;
+	padding: .45em;
+	font-size: 1.1em;
+	margin: 0;
+	cursor: pointer;
+	/*background: #000;*/
+	line-height: 2em;
+	color: #c9e7ca;
+}
+
+nav label:after {
+	position: absolute;
+	right: 0.25em;
+	top: -.05em;
+	content: "\2261";
+	font-size: 2.8em;
+	line-height: 1.0em;
+	color: white;
+}
+
+/* wider screens */
+@media (min-width: 48em) {
+	nav label {
+		display: none;
+	}
+	nav ul {
+		margin: 0;
+		/* older flexbox */
+		display: -ms-flexbox;
+		flex-direction: -ms-row;
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		-webkit-box-orient: horizontal;
+		-moz-box-orient: horizontal;
+		box-orient: horizontal;
+		/* newer flexbox */
+		display: flex;
+		flex-direction: row;
+	}
+
+	nav ul li {
+		position: relative;
+		text-align: center;
+		/* older flexbox */
+		-ms-flex: 1;
+		-webkit-box-flex: 1;
+		-moz-box-flex: 1;
+		box-flex: 1;
+		/* newer flexbox */
+		flex: 1 1 auto;
+	}
+
+	nav ul li ul {
+		display: none !important;
+		position: absolute;
+		top: 3.0625em;
+		left: 0;
+		display: block;
+		width: 12.5em;
+		z-index: 200;
+	}
+
+	nav ul li ul li {
+		text-align: left;
+		position: relative;
+		top: 10px;
+	}
+	nav ul li ul li ul {
+		z-index: 300;
+		top: 0px;
+		left: 12.4em;
+	}
+	nav ul li ul li ul li a {
+		padding-left: 30px !important;
+	}
+	nav ul li:hover > ul {
+		display: block !important;
+	}
+}

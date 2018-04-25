@@ -1,0 +1,107 @@
+/* 
+	Project 2 Style Sheet
+	Skyler Booth
+	i-399 Web Developement
+*/
+
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+	background-color: #2ECC71;
+	
+}
+.container {
+	border: 2px solid black;
+	width: 900px;
+	margin: 0 auto;
+	padding: 20px 75px;
+	background-color: #839192;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Times New Roman', Garamond, serif;
+	line-height: 1.3em;
+}
+h1 {
+	font-size: 54px;
+}
+
+h2 {
+	font-size: 42px;
+	margin-bottom: 0px;
+	margin-top: 1.7em;
+}
+p, li, figcaption, small, td {
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.2em;
+}
+
+ul li {
+	line-height: 2.1em;
+	list-style-type: square
+}
+ol li {
+	padding-bottom: 0.6em;
+	list-style-type: upper-roman;
+}
+table {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 16px;
+	width: 95%;
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #6699cc;
+	margin: 35px auto 0;
+}
+th {
+	font-weight: normal;
+	color: #003399;
+	border-bottom: 1px dashed #6699cc;
+	padding: 12px 17px;
+	background: #e8edff;
+	text-align: right;
+}
+td {
+	color: #003399;
+	padding: 12px 17px;
+	border-bottom: 1px dashed #69c;
+	background: #e8edff;
+}
+h3 {
+	font-size: 24px;
+}
+.related {
+	border-top: 1px inset black;
+	margin-top: 4.0em;
+	padding-top: 1.0em;
+}
+img {
+	width: 100%;
+}
+figure {
+	width: 45%;
+	float: right;
+	margin-top: 20px;
+}
+a:link{
+	color: #3399ff;
+	text-decoration: none;
+}
+a:visited{
+	color: #66ff66;
+	text-decoration: none;
+}
+a:hover{
+	color: #ff0000;
+	text-decoration: underline;
+}
+a:active{
+	color: #ff00ff;
+	text-decoration: underline;
+}
